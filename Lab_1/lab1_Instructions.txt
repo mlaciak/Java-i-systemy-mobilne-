@@ -1,0 +1,26 @@
+1. Cel: Prosty kalkulator pól i obwodów figur dwuwymiarowych
+
+2. Przygotować klasę abstrakcyjną Figure zawierającą, abstrakcyjne metody:
+▪ double calculateArea();
+▪ double calculatePerimeter();
+
+3. Przygotować interfejs Print z metodą void print();
+
+4. Zaimplementować klasy Triangle, Square, Circle dziedziczące po klasie Figure i implementujące
+interfejs Print
+a. Do klas można dopisać dowolne metody i pola pomocnicze
+b. Każda klasa powinna mieć konstruktor z parametrami typowymi dla danej figury
+c. Metoda print z interfejsu powinna wypisywać na ekran informacje o obiekcie (dane
+charakterystyczne dla figury)
+d. W przypadku podania niepoprawnych danych podczas konstrukcji obiektu - wyjątek
+powinien zostać rzucony
+
+5. Wedle uznania prosty konsolowy interfejs użytkownika (oparty o while i switch) umożliwiający:
+a. wybór figury
+b. podanie danych
+c. wyświetlenie
+d. wyjście z programu.
+
+6. Architektura programu powinna w maksymalny sposób odgraniczyć część interfejsu użytkownika
+(wprowadzania/wypisywanie danych) od logiki programu. To jest, dane wprowadzaj w oddzielnej
+klasie a implementacje logiki pozostaw odseparowaną od wprowadzania danych.
