@@ -1,0 +1,40 @@
+1. Cel zadania: Stworzyć prosty symulator usługi magazynowej
+
+2. Zaimplementuj:
+a. Typ wyliczeniowy ItemCondition z polami: NEW, USED, REFURBISHED
+b. Klasę Item z polami: nazwa (String), stan (ItemCondition), masa (double), ilość (integer)
+	i. Konstruktor pozwalający na łatwą inicjalizację obiektu (nazwa, masa, stan, ilość)
+	ii. Metodę print wypisujący na standardowe wyjście pełne informacje o towarze
+	iii. Niech klasa Item implementuje interfejs Comparable<Item> pozwalający na porównanie
+	obiektów ze względu na nazwę.
+c. Klasę FulfillmentCenter, która zawiera takie informacje jak: nazwa magazynu, lista produktów,
+maksymalna pojemność magazynu (maksymalna masa wszystkich produktów). Oraz następujące
+metody:
+	i. addProduct(Item) – Dodająca produkt. Jeśli dany produkt będzie już obecny w magazynie
+(produkt o tej samej nazwie istnieje) to należy zsumować ich ilość. Produkt może zostać
+dodany, tylko jeśli niezostanie przekroczona pojemność magazynu. Jeśli pojemność
+zostanie przekroczona wypisz komunikat na standardowe wyjście błędów (System.err)
+	ii. getProduct(Item) – Zmniejszający ilość danego produktu o jeden lub usuwający go
+całkowicie, jeśli po zmianie wartość będzie równa 0.
+	iii. removeProduct(Item) – usuwający dany produkt całkowicie z magazynu.
+	iv. search(String) - Przyjmującej nazwę produktu i zwracający go. Zastosuj Comparator
+	v. searchPartial(String) – Przyjmujący fragment nazwy produktu i zwracający wszystkie
+produkty, które pasują.
+	vi. countByCondition(ItemCondition) – zwracający ilość produktów o danym stanie
+	vii. summary() – wypisującą na standardowe wyjście informację o wszystkich produktach
+	viii. sortByName() – zwracającą posortowana listę produktów – po nazwie alfabetycznie
+	ix. sortByAmount() – zwracającą posortowaną listę produktów po ilości – malejąco – zastosuj
+własny Comparator
+	x. max() – zwracającą produkt którego jest najwięcej - zastosuj metodę
+Collections.max
+d. Klasę FulfillmentCenterContainer przechowującą w Map<String, FulfillmentCenter> magazyny.
+(Kluczem jest nazwa magazynu), zaimplementuj metody:
+	i. addCenter(String, double) – dodającą nowy magazyn o podanej nazwie i zadanej
+pojemności do spisu magazynów
+	ii. removeCenter(String) – usuwający magazyn o podanej nazwie
+	iii. findEmpty() – zwracający listę pustych magazynów
+	iv. summary() – wypisujący na standardowe wyjście informacje zawierające: nazwę magazynu
+i procentowe zapełnienie
+
+3. Pokazać działanie wszystkich metod w aplikacji w metodzie main poprzez uruchomienie każdej
+metody wedle potrzeb. NIE twórz menu.
