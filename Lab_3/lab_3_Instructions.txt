@@ -1,0 +1,52 @@
+1. Cel zadania: poczuj się jak pracownik NASA i zaimplementuj kalkulator naukowy w oparciu o
+bibliotekę mXparser!
+
+2. Twoim zadaniem jest stworzenie kalkulatora z zaawansowanym interfejsem graficznym:
+
+3. Dodawanie biblioteki mXparser do projektu:
+	a. Stwórz projekt oparty o maven
+	b. Do pliku pom.xml pod tagiem <version> dodaj:
+<dependencies>
+ <dependency>
+ <groupId>org.mariuszgromada.math</groupId>
+ <artifactId>MathParser.org-mXparser</artifactId>
+ <version>4.1.1</version>
+ </dependency>
+</dependencies>
+
+4. Opis poszczególnych funkcjonalności:
+	a. Reset (menu): Czyści zawartość JTextField i JTextArea
+	b. Exit (menu): Zamyka aplikację
+	c. JTextArea: Pole tekstowe, w którym wyświetlana jest historia operacji w formacie
+podanym na ilustracji.
+	i. Do wyświetlenia pojedyńczego wpisu zaprojektuj szablon i wykorzystaj klasę
+MessageFormat
+	ii. komponent JTextArea powinien być read-only
+	iii. jeśli będzie taka potrzeba powinien pojawić się suwak do przesuwania
+historii
+	d. JTextField: Służy do wpisywania działań matematycznych:
+	i. Jeśli użytkownik wciśnie klawisz ↑ (na klawiaturze) to w polu tekstowy
+powinno się pojawić ostatnie wpisane działanie
+	e. JList: Zawiera listę podstawowych funkcji matematycznych. Zaimplementuj obsługę 3
+funkcji jednoargumentowych (http://mathparser.org/mxparser-mathcollection/unary-functions/),
+
+3 funkcji dwuargumentowych
+(http://mathparser.org/mxparser-math-collection/binary-functions/) i wyświetlanie
+3 wybranych stałych (http://mathparser.org/mxparser-math-collection/constants/) +
+opcja „last result”
+	i. List powinna zostać zbudowana przy użyciu DefaultListModel
+(http://www.codejava.net/java-se/swing/jlist-custom-renderer-example),
+który będzie zawierał pełne nazwy funkcji i ich odpowiedniki akceptowalne
+dla parsera
+	ii. Lista musi wyświetlać pełne nazwy funkcji
+	iii. Po podwójnym kliknięciu wybrana funkcja powinna się pojawić w polu
+JTextField w formie akceptowalnej dla parsera (np. po kliknięciu sinus w polu
+tekstowym powinno pojawić sin())
+	iv. Jeśli funkcja zawiera nawiasy, kursor powinien automatycznie ustawić się
+między nawiasami
+	v. Funkcja last result powinna wklejać do pola JTextField ostatni wynik
+	vi. Po wciśnięciu klawisza Enter działanie powinno znikać z JTextField i pojawiać
+się razem z wynikiem w historii
+	vii. Jeśli składnia działania jest niepoprawna powinien się pojawić popup z
+opisem błędu
+	f. Evaluate: działa analogicznie jak wciśnięcie Enter w JTextField
