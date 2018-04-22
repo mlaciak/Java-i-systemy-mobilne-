@@ -1,0 +1,21 @@
+Lab. 4 – JavaFX 
+
+1. Cel zadania: Stwórz aplikację do zarządzania projektami w oparciu o metodę Kanban
+(https://en.wikipedia.org/wiki/Kanban_board)
+
+2. Aplikacja powinna posiadać następujące funkcjonalności:
+	a. Menu aplikacji posiada dwie opcje: 1) File -> Close (zamykanie aplikacji) 2) About
+(wyświetlenie informacji o autorze w komponencie Alert).
+	b. Dodawanie nowego zadania przy użyciu formularza, który wyświetla się po
+wciśnięciu przycisku „Add new task”. Formularz pozwala na wprowadzenie takich
+informacji jak: tytuł, opis, termin ważności (DatePicker), priorytet (ComboBox).
+	c. Nowe zadanie domyślnie pokazuje się na liście „TODO”
+	d. Wybrany priorytet powinien być odzwierciedlony w wyglądzie elementu listy np.
+dodatkową ikoną lub kolorem tła.
+	e. Po najechaniu na element z listy powinien się wyświetlić Tooltip zawierający opis
+zadania.
+	f. Po kliknięciu prawym przyciskiem myszy na element z listy powinno się wyświetlić
+Menu (ContextMenu) z dwoma opcjami: 1) Delete (usuwa element) 2) Edit
+(wyświetla formularz do edycji zadania)
+	g. Możliwe jest przenoszenie zadań między listami
+	h. Zadbaj o czytelność i ergonomię aplikacji

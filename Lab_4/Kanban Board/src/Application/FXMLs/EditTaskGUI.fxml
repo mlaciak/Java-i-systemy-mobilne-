@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controllers.EditTaskController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label text="Title" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+        <TextField fx:id="textFieldEditTaskTitle" alignment="TOP_LEFT" promptText="Set Title" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label contentDisplay="CENTER" text="Priority" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+        <ComboBox fx:id="comboBoxEditTaskPriority" promptText="Choose Priority" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+        <Label text="Exp. Date" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+        <DatePicker fx:id="datePickerEditTaskDate" editable="false" promptText="Set Exp. Date" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label text="Description:" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+        <TextField fx:id="textFieldEditTaskDescription" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Write your description in here" GridPane.columnSpan="2" GridPane.rowIndex="5">
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </TextField>
+        <Button fx:id="buttonEditTask2" mnemonicParsing="false" text="Edit Task" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+        <MenuBar GridPane.columnSpan="2">
+            <menus>
+                <Menu mnemonicParsing="false" text="Close">
+                    <items>
+                        <MenuItem fx:id="menuItemExit2" mnemonicParsing="false" text="exit" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</GridPane>
