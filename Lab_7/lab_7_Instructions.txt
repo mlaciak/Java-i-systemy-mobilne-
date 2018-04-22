@@ -1,0 +1,18 @@
+Lab. 7 – IO i Serializacja
+
+1. Cel zadania: Do aplikacja Kanban (LAB4) zaimplementuj następującą funkcjonalność:
+	a. Zapis/OD do pliku stanu aplikacji poprzez serializację list TODO, INPROGRESS, DONE
+	b. Odczyt stanu z pliku poprzez deserializację list
+	c. Eksport/import list do/z pliku w formacie CSV
+	d. Eksport/import list do/z pliku w formacie JSON
+
+2. Szczegóły zadania:
+	a. Polecenia Save/Open, Export/Import są wybierane z Menu aplikacji
+	b. Przed każdą operacją należy zapytać użytkownika o miejsce zapisu/odczytu pliku za
+pomocą komponentu FileChooser. Komponent powinien obsługiwać filtrowanie
+rozszerzeń za pomocą ExtensionFilter.
+	c. Zadbaj o obsługę wyjątków.
+	d. ObservableList nie implementuje interfejsu Serializable – musisz dokonać przed
+zapisem konwersji na ArrayList – to samo dotyczy deserializacji
+	e. Do obsługi formatu CSV oraz JSON można wykorzystać istniejące biblioteki z
+repozytorium maven
