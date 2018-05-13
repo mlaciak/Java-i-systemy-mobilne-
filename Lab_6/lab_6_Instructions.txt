@@ -1,0 +1,18 @@
+Lab. 6 – Threads
+
+1. Wykorzystując metodę Monte Carlo obliczyć całkę z funkcji:
+(Wykres BATMAN)
+Wykres narysować na elemencie Canvas w sposób nieblokujący (w osobnym wątku). Zbiór
+punktów należących do funkcji zaznaczyć kolorem żółtym (pixel po pixelu), pozostałe punkty
+kolorem ciemnoniebieskim. Dla ułatwienia udostępniam klasę Equation.java której metoda
+boolean calc(double x, double y) zwraca wartość PRAWDA/FAŁSZ w zależności
+od tego czy punkt <x,y> spełnia równanie f(x,y)czy nie.
+
+2. Podstawowa funkcjonalność:
+	a. Możliwość prowadzenia obliczeń w sposób asynchroniczny z możliwością ich
+zastopowania w dowolnym czasie (patrz przykład 3.2). Wizualizacja wykresu na
+elemencie Canvas poprzez zaznaczanie pojedynczych pikseli na określony w zadaniu
+kolor
+	b. Prezentowanie postępu obliczeń na komponencie ProgressBar
+	c. Formatka z możliwością określenia ilości punktów do symulacji i wyświetleniem
+wyniku całkowanie oraz przyciskami START, STOP

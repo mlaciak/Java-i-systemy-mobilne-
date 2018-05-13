@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Controller">
+   <children>
+      <Canvas fx:id="CanvasScreen" height="500.0" layoutX="150.0" layoutY="50.0" width="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+      <Button fx:id="ButtonStart" layoutX="359.0" layoutY="563.0" mnemonicParsing="false" text="Start" />
+      <ProgressBar fx:id="ProgressBarWhatsTheProgress" layoutX="409.0" layoutY="567.0" prefWidth="200.0" progress="0.0" />
+      <Button fx:id="ButtonStop" layoutX="24.0" layoutY="562.0" mnemonicParsing="false" text="Stop" />
+      <Label fx:id="LabelInfo" layoutX="72.0" layoutY="566.0" text="No. Symulation Points" />
+      <TextField fx:id="TextFieldNoSymulationPoints" layoutX="198.0" layoutY="562.0" />
+       <Label fx:id="LabelStatusResult" layoutX="618.0" layoutY="567.0" text="Result" />
+      <TextField fx:id="TextFieldResult" editable="false" layoutX="661.0" layoutY="564.0" prefHeight="25.0" prefWidth="107.0" />
+   </children>
+</AnchorPane>
