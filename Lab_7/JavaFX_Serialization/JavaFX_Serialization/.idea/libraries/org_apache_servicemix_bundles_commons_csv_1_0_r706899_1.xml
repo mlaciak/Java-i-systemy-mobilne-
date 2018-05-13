@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.apache.servicemix.bundles.commons-csv-1.0-r706899_1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/commons-csv-1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
